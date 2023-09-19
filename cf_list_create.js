@@ -82,14 +82,14 @@ await readFile(resolve(`./${blocklistFilename}`), (line, rl) => {
       if (blocklist.has(item)) {
         if (item === domain) {
           // The exact domain is already blocked
-          console.log(`Found ${item} in blocklist already - Skipping`);
+          //console.log(`Found ${item} in blocklist already - Skipping`);
           duplicateDomainCount++;
         } else {
           // The higher-level domain is already blocked
           // so it's not necessary to block this domain
-          console.log(
-            `Found ${item} in blocklist already - Skipping ${domain}`
-          );
+          //console.log(
+            //`Found ${item} in blocklist already - Skipping ${domain}`
+          //);
           unnecessaryDomainCount++;
         }
 

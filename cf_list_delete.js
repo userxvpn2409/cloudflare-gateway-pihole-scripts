@@ -15,7 +15,7 @@ import { FAST_MODE } from "./lib/constants.js";
     return;
   }
 
-  const cgpsLists = lists.filter(({ name }) => name.startsWith("CGPS List"));
+  const cgpsLists = lists.filter(({ name }) => name.startsWith(""));
 
   if (!cgpsLists.length) {
     console.warn(
